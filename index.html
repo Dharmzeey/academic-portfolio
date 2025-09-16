@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Adam Adedamola Olanrewaju — Academic Portfolio</title>
+    <meta
+      name="description"
+      content="Academic portfolio of a First Class graduate from the University of Ibadan showcasing education, research, leadership, honors, publications, and projects."
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+  </head>
+
+  <body
+    class="bg-neutral-950 text-neutral-100 antialiased font-sans"
+    style="
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI,
+        Roboto, Helvetica, Arial, Apple Color Emoji, Segoe UI Emoji;
+    "
+  >
+    <!-- Navbar -->
+    <header
+      class="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-neutral-950/70 bg-neutral-950/60 border-b border-white/10"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex h-16 items-center justify-between">
+          <a href="#" class="flex items-center gap-3 group">
+            <div
+              class="h-8 w-8 rounded-md bg-white/5 ring-1 ring-white/10 grid place-items-center text-sm font-semibold tracking-tight group-hover:ring-white/20 transition"
+            >
+              <img src="./bg-bw-rm.png" alt="Adam Olanrewaju icon" srcset="">
+            </div>
+            <span
+              class="text-sm sm:text-base font-medium text-white/90 group-hover:text-white transition tracking-tight"
+              >Adam Adedamola Olanrewaju</span
+            >
+          </a>
+          <nav class="hidden md:flex items-center gap-6 text-sm text-white/70">
+            <a href="#about" class="hover:text-white transition">About</a>
+            <a href="#education" class="hover:text-white transition"
+              >Education</a
+            >
+            <a href="#research" class="hover:text-white transition">Research</a>
+            <a href="#leadership" class="hover:text-white transition"
+              >Leadership</a
+            >
+            <a href="#honors" class="hover:text-white transition">Honors</a>
+            <!-- <a href="#publications" class="hover:text-white transition"
+              >Publications</a
+            > -->
+            <a href="#projects" class="hover:text-white transition">Projects</a>
+            <a href="#contact" class="hover:text-white transition">Contact</a>
+          </nav>
+          <div class="hidden md:flex items-center gap-3">
+            <a
+              href="#contact"
+              class="inline-flex items-center gap-2 rounded-md px-3.5 py-2 text-sm font-medium text-white bg-white/5 hover:bg-white/10 ring-1 ring-white/10 transition"
+            >
+              <i data-lucide="mail" class="h-4 w-4"></i> Email
+            </a>
+            <a
+              href="#"
+              class="inline-flex items-center gap-2 rounded-md px-3.5 py-2 text-sm font-medium text-neutral-900 bg-white hover:bg-white/90 transition"
+            >
+              <i data-lucide="file-text" class="h-4 w-4"></i> CV
+            </a>
+          </div>
+          <button
+            id="menuBtn"
+            class="md:hidden inline-flex items-center justify-center rounded-md p-2 text-white/80 hover:text-white hover:bg-white/10 ring-1 ring-white/10 transition"
+            aria-label="Open main menu"
+          >
+            <i data-lucide="menu" class="h-5 w-5"></i>
+          </button>
+        </div>
+      </div>
+      <!-- Mobile menu -->
+      <div id="mobileMenu" class="md:hidden hidden border-t border-white/10">
+        <div class="px-4 py-3 space-y-1 text-sm text-white/80">
+          <a
+            href="#about"
+            class="block px-2 py-2 rounded hover:bg-white/10 hover:text-white transition"
+            >About</a
+          >
+          <a
+            href="#education"
+            class="block px-2 py-2 rounded hover:bg-white/10 hover:text-white transition"
+            >Education</a
+          >
+          <a
+            href="#research"
+            class="block px-2 py-2 rounded hover:bg-white/10 hover:text-white transition"
+            >Research</a
+          >
+          <a
+            href="#leadership"
+            class="block px-2 py-2 rounded hover:bg-white/10 hover:text-white transition"
+            >Leadership</a
+          >
+          <a
+            href="#honors"
+            class="block px-2 py-2 rounded hover:bg-white/10 hover:text-white transition"
+            >Honors</a
+          >
+          <!-- <a
+            href="#publications"
+            class="block px-2 py-2 rounded hover:bg-white/10 hover:text-white transition"
+            >Publications</a
+          > -->
+          <a
+            href="#projects"
+            class="block px-2 py-2 rounded hover:bg-white/10 hover:text-white transition"
+            >Projects</a
+          >
+          <a
+            href="#contact"
+            class="block px-2 py-2 rounded hover:bg-white/10 hover:text-white transition"
+            >Contact</a
+          >
+          <div class="flex gap-2 pt-2">
+            <a
+              href="#contact"
+              class="inline-flex flex-1 items-center justify-center gap-2 rounded-md px-3 py-2 text-sm font-medium text-white bg-white/5 hover:bg-white/10 ring-1 ring-white/10 transition"
+            >
+              <i data-lucide="mail" class="h-4 w-4"></i> Email
+            </a>
+            <a
+              href="#"
+              class="inline-flex flex-1 items-center justify-center gap-2 rounded-md px-3 py-2 text-sm font-medium text-neutral-900 bg-white hover:bg-white/90 transition"
+            >
+              <i data-lucide="file-text" class="h-4 w-4"></i> CV
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section id="about" class="relative">
+      <div
+        class="absolute inset-0 pointer-events-none [mask-image:linear-gradient(to_bottom,black,transparent)]"
+      >
+        <div
+          class="absolute -top-24 left-1/2 -translate-x-1/2 w-[60rem] h-[30rem] rounded-full bg-indigo-500/10 blur-3xl"
+        ></div>
+      </div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-14 pb-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+          <div class="lg:col-span-11">
+         
+            <h1
+              class="mt-5 text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tight"
+            >
+              Adam Adedamola Olanrewaju
+            </h1>
+            <small><i>Forestry Graduate </i></small>
+            <p
+              class="mt-4 text-sm text-white/70 text-base leading-relaxed text-justify"
+            >
+              I am a graduate of forestry with strong interest in advancing into
+              a master’s program that integrates technology with forestry and
+              environmental studies. My academic background has provided him
+              with a solid understanding of forest ecology, conservation, and
+              natural resource management, while my passion lies in applying
+              innovative technologies such as Geographic Information Systems
+              (GIS), remote sensing, environmental informatics, and data-driven
+              tools to solve pressing environmental and sustainability
+              challenges.
+              <br />
+              <br />
+
+              I am motivated to explore how modern computer-based
+              techniques—including geospatial analysis, mapping, image
+              processing, and predictive modelling—can be used to improve forest
+              monitoring, land-use planning, biodiversity conservation, and
+              sustainable resource management.
+              <br />
+              <br />
+
+              My research interests include digital forestry, GIS and remote
+              sensing applications, and the use of emerging technologies to
+              address climate change and deforestation. I am eager to pursue
+              further studies that will equip him with interdisciplinary skills
+              to bridge forestry with technology in order to support sustainable
+              environmental solutions.
+              <br />
+              <br />
+
+              Beyond academics, I values creativity, collaboration and I possess
+              strong leadership qualities. I have participated in activities
+              that support both students and local communities, and I love
+              networking with people from diverse backgrounds to share ideas and
+              foster impactful collaborations. Passionate about learning,
+              mentorship, and innovation, I am looking forward to joining a team
+              or academic community where technology is used as a tool to
+              address real-world forestry and environmental challenges on a
+              global scale.
+              <br />
+
+              <i
+                >This is my E-portfolio, where you can explore my skills,
+                experiences, achievements, and ongoing interests.</i
+              >
+            </p>
+            <div class="mt-6 flex flex-wrap items-center gap-3">
+              <a
+                href="#contact"
+                class="inline-flex items-center gap-2 rounded-md px-4 py-2.5 text-sm font-medium text-neutral-900 bg-white hover:bg-white/90 transition"
+              >
+                <i data-lucide="send" class="h-4 w-4"></i> Get in touch
+              </a>
+           
+              <div class="flex items-center gap-2 text-white/60 text-sm">
+                <i data-lucide="map-pin" class="h-4 w-4"></i> Ibadan, Nigeria
+              </div>
+            </div>
+            <div class="mt-8 grid grid-cols-5 max-w-xl gap-4">
+              <div
+                class="rounded-lg bg-white/5 ring-1 ring-white/10 p-4 col-span-3"
+              >
+                <div class="text-xs text-white/60">Degree</div>
+                <div class="mt-1 text-base font-medium">
+                  B.Sc. Forestry (First Class)
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="lg:col-span-5">
+            <div class="relative">
+              <div
+                class="absolute -inset-2 rounded-xl bg-gradient-to-tr from-white/10 to-transparent blur-xl"
+              ></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="py-12 border-t border-white/10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between gap-4">
+          <h2 class="text-2xl md:text-3xl font-semibold tracking-tight">
+            Education
+          </h2>
+          <span class="text-xs text-white/50"
+            >Selected academic background</span
+          >
+        </div>
+        <div class="mt-6 grid grid-cols-1 gap-6">
+          <div
+            class="rounded-xl bg-white/5 ring-1 ring-white/10 p-6 flex flex-col sm:flex-row sm:items-start sm:justify-between gap-6"
+          >
+            <div class="flex-1">
+              <div class="flex items-center gap-3">
+                <div
+                  class="h-10 w-10 rounded-md grid place-items-center bg-white/5 ring-1 ring-white/10 text-sm font-semibold tracking-tight"
+                >
+                  UI
+                </div>
+                <div>
+                  <div class="text-base font-medium">University of Ibadan</div>
+                  <div class="text-sm text-white/60">Ibadan, Nigeria</div>
+                </div>
+              </div>
+              <div class="mt-4 text-white/80 text-sm leading-relaxed">
+                Bachelor of Forestry
+              </div>
+              <div class="mt-4 flex flex-wrap gap-2">
+                <span
+                  class="inline-flex items-center gap-1 rounded-full px-3 py-1 text-xs font-medium bg-white/5 ring-1 ring-white/10 text-white/80"
+                >
+                  <i data-lucide="award" class="h-3.5 w-3.5"></i> Dean’s Roll of
+                  Honour List
+                </span>
+                <span
+                  class="inline-flex items-center gap-1 rounded-full px-3 py-1 text-xs font-medium bg-white/5 ring-1 ring-white/10 text-white/80"
+                >
+                  <i data-lucide="medal" class="h-3.5 w-3.5"></i> Award
+                </span>
+              </div>
+            </div>
+            <div class="shrink-0 sm:text-right">
+              <div class="text-sm text-white/60">April 2018 — May 2024</div>
+              <div class="mt-1 text-sm font-medium">CGPA: 3.65/4.0</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Research & Interests -->
+    <section id="research" class="py-12 border-t border-white/10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between gap-4">
+          <h2 class="text-2xl md:text-3xl font-semibold tracking-tight">
+            Research
+          </h2>
+          <span class="text-xs text-white/50">Interests</span>
+        </div>
+        <div class="mt-6 grid grid-cols-1 lg:grid-cols-12 gap-6">
+          <div
+            class="lg:col-span-7 rounded-xl bg-white/5 ring-1 ring-white/10 p-6"
+          >
+            <h3 class="text-base font-medium">Research interests</h3>
+            <p class="mt-2 text-sm text-white/70">
+              Satellite Imaging and GIS, Artificial Intelligence (AI), Spatial
+              data science using programming languages, Environmental analysis
+              and management.
+            </p>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span
+                class="px-3 py-1 text-xs font-medium rounded-full bg-white/5 ring-1 ring-white/10 text-white/80"
+                >Geospatial Analysis</span
+              >
+              <span
+                class="px-3 py-1 text-xs font-medium rounded-full bg-white/5 ring-1 ring-white/10 text-white/80"
+                >Remote Sensing</span
+              >
+              <span
+                class="px-3 py-1 text-xs font-medium rounded-full bg-white/5 ring-1 ring-white/10 text-white/80"
+                >Environmental Informatics</span
+              >
+              <span
+                class="px-3 py-1 text-xs font-medium rounded-full bg-white/5 ring-1 ring-white/10 text-white/80"
+                >GIS Applications</span
+              >
+              <span
+                class="px-3 py-1 text-xs font-medium rounded-full bg-white/5 ring-1 ring-white/10 text-white/80"
+                >Digital Forestry</span
+              >
+              <span
+                class="px-3 py-1 text-xs font-medium rounded-full bg-white/5 ring-1 ring-white/10 text-white/80"
+                >Sustainable Resource Management</span
+              >
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- Leadership -->
+    <section id="leadership" class="py-12 border-t border-white/10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between gap-4">
+          <h2 class="text-2xl md:text-3xl font-semibold tracking-tight">
+            Management & Leadership
+          </h2>
+          <span class="text-xs text-white/50">Roles and initiatives</span>
+        </div>
+        <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="rounded-xl bg-white/5 ring-1 ring-white/10 p-6">
+            <div class="flex items-center gap-3">
+              <div
+                class="h-9 w-9 rounded-md bg-white/5 ring-1 ring-white/10 grid place-items-center"
+              >
+                <i data-lucide="user-check" class="h-4.5 w-4.5"></i>
+              </div>
+              <div>
+                <div class="text-sm font-medium">
+                  <b class="uppercase">CLO</b>, FGGCS corp members
+                </div>
+                <div class="text-xs text-white/60">Ogun state · 2025</div>
+              </div>
+            </div>
+          </div>
+          <div class="rounded-xl bg-white/5 ring-1 ring-white/10 p-6">
+            <div class="flex items-center gap-3">
+              <div
+                class="h-9 w-9 rounded-md bg-white/5 ring-1 ring-white/10 grid place-items-center"
+              >
+                <i data-lucide="users" class="h-4.5 w-4.5"></i>
+              </div>
+              <div>
+                <div class="text-sm font-medium">
+                  <b class="uppercase">PRO</b>, MCAN Ogun state, in camp
+                </div>
+                <div class="text-xs text-white/60">Ogun state · 2024</div>
+              </div>
+            </div>
+          </div>
+          <div class="rounded-xl bg-white/5 ring-1 ring-white/10 p-6">
+            <div class="flex items-center gap-3">
+              <div
+                class="h-9 w-9 rounded-md bg-white/5 ring-1 ring-white/10 grid place-items-center"
+              >
+                <i data-lucide="users" class="h-4.5 w-4.5"></i>
+              </div>
+              <div>
+                <div class="text-sm font-medium">
+                  <b class="uppercase">Coordinator</b>, MSSN Agric and Renewable
+                  Natural Resources
+                </div>
+                <div class="text-xs text-white/60">
+                  University of Ibadan · 2023 - 2024
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="rounded-xl bg-white/5 ring-1 ring-white/10 p-6">
+            <div class="flex items-center gap-3">
+              <div
+                class="h-9 w-9 rounded-md bg-white/5 ring-1 ring-white/10 grid place-items-center"
+              >
+                <i data-lucide="flag" class="h-4.5 w-4.5"></i>
+              </div>
+              <div>
+                <div class="text-sm font-medium">Class Representative</div>
+                <div class="text-xs text-white/60">
+                  Forestry department · 2023 - 2024
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="rounded-xl bg-white/5 ring-1 ring-white/10 p-6">
+            <div class="flex items-center gap-3">
+              <div
+                class="h-9 w-9 rounded-md bg-white/5 ring-1 ring-white/10 grid place-items-center"
+              >
+                <i data-lucide="users" class="h-4.5 w-4.5"></i>
+              </div>
+              <div>
+                <div class="text-sm font-medium">
+                  <b class="uppercase">Assistant Coordinator</b>, MSSN Agric and
+                  Renewable Natural Resources
+                </div>
+                <div class="text-xs text-white/60">
+                  University of Ibadan · 2021 - 2023
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="rounded-xl bg-white/5 ring-1 ring-white/10 p-6">
+            <div class="flex items-center gap-3">
+              <div
+                class="h-9 w-9 rounded-md bg-white/5 ring-1 ring-white/10 grid place-items-center"
+              >
+                <i data-lucide="lightbulb" class="h-4.5 w-4.5"></i>
+              </div>
+              <div>
+                <div class="text-sm font-medium">
+                  General Secretary, Faculty
+                </div>
+                <div class="text-xs text-white/60">
+                  Student Independent Electoral Committee
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Honors & Awards -->
+    <section id="honors" class="py-12 border-t border-white/10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between gap-4">
+          <h2 class="text-2xl md:text-3xl font-semibold tracking-tight">
+            Honors & Awards
+          </h2>
+          <span class="text-xs text-white/50">Distinctions</span>
+        </div>
+        <div class="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="rounded-xl bg-white/5 ring-1 ring-white/10 p-6">
+            <div class="flex items-center gap-3">
+              <i data-lucide="award" class="h-5 w-5 text-indigo-300"></i>
+              <div class="text-sm font-medium">
+                Best Student in wood science, Forestry
+              </div>
+            </div>
+            <div class="mt-1 text-xs text-white/60">
+              University of Ibadan · 2024
+            </div>
+          </div>
+          <div class="rounded-xl bg-white/5 ring-1 ring-white/10 p-6">
+            <div class="flex items-center gap-3">
+              <i
+                data-lucide="bookmark-check"
+                class="h-5 w-5 text-indigo-300"
+              ></i>
+              <div class="text-sm font-medium">
+                Dean’s Roll of Honour, 2 Sessions
+              </div>
+            </div>
+            <div class="mt-1 text-xs text-white/60">
+              University of Ibadan · 2022 & 2023
+            </div>
+          </div>
+          <div class="rounded-xl bg-white/5 ring-1 ring-white/10 p-6">
+            <div class="flex items-center gap-3">
+              <i data-lucide="trophy" class="h-5 w-5 text-indigo-300"></i>
+              <div class="text-sm font-medium">Academic Excellence award</div>
+            </div>
+            <div class="mt-1 text-xs text-white/60">MSSN, UI · 2022 & 2023</div>
+          </div>
+          <div class="rounded-xl bg-white/5 ring-1 ring-white/10 p-6">
+            <div class="flex items-center gap-3">
+              <i data-lucide="star" class="h-5 w-5 text-indigo-300"></i>
+              <div class="text-sm font-medium">
+                Excellence Award, Best corp member
+              </div>
+            </div>
+            <div class="mt-1 text-xs text-white/60">
+              FGGCS, Ogun state · 2025
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Volunteering & Community Service -->
+    <section id="volunteering" class="py-12 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between gap-4">
+                <h2 class="text-2xl md:text-3xl font-semibold tracking-tight">
+                    Volunteering & Community Service
+                </h2>
+                <span class="text-xs text-white/50">Giving back & outreach</span>
+            </div>
+            <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- World Clean-up Day -->
+                <div class="rounded-xl bg-white/5 ring-1 ring-white/10 p-6">
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="leaf" class="h-5 w-5 text-indigo-300"></i>
+                        <div class="text-sm font-medium">World Clean-up Day</div>
+                    </div>
+                    <div class="mt-1 text-xs text-white/60">Ado-Ekiti · 18th Sept 2022</div>
+                    <ul class="mt-2 text-sm text-white/70 list-disc list-inside space-y-1">
+                        <li>Cleaning and sanitation of the city of Ado-Ekiti.</li>
+                        <li>Enlightenment and sensitization of citizens on the importance of clean environments.</li>
+                    </ul>
+                </div>
+                <!-- Community Outreaches during NYSC -->
+                <div class="rounded-xl bg-white/5 ring-1 ring-white/10 p-6">
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="users" class="h-5 w-5 text-indigo-300"></i>
+                        <div class="text-sm font-medium">Community Outreaches during NYSC</div>
+                    </div>
+                    <div class="mt-1 text-xs text-white/60">Sagamu, Ogun State · 2024-2025</div>
+                    <ul class="mt-2 text-sm text-white/70 list-disc list-inside space-y-1">
+                        <li>
+                            <span class="font-medium">Transatlantic College, Sagamu:</span>
+                            Sensitized secondary school students on environmental sustainability and 3 of the SDG Goals.
+                        </li>
+                        <li>
+                            <span class="font-medium">Methodist College, Sagamu:</span>
+                            Educated senior secondary school students on modern farming techniques.
+                        </li>
+                        <li>
+                            <span class="font-medium">Sabo Market & Awolowo Market:</span>
+                            Engaged marketers on safe ways of livestock rearing and consumption.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <!-- Projects -->
+    <section id="projects" class="py-12 border-t border-white/10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between gap-4">
+          <h2 class="text-2xl md:text-3xl font-semibold tracking-tight">
+            Selected Projects
+          </h2>
+          <span class="text-xs text-white/50">Academic & applied</span>
+        </div>
+        <div class="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <a
+            href="https://tree-database.dharmzeey.com"
+            class="group rounded-xl overflow-hidden ring-1 ring-white/10 bg-white/5 hover:ring-white/20 transition"
+          >
+            <img
+              src="https://dharmzeey.com/images/uitrees/homepage.jpg"
+              alt="Project preview"
+              class="h-40 w-full object-cover"
+            />
+            <div class="p-5">
+              <div class="flex items-center gap-2 text-xs text-white/60">
+                <i data-lucide="tree-pine" class="h-4 w-4"></i> Tree Data
+              </div>
+              <h3
+                class="mt-2 text-base font-medium tracking-tight group-hover:text-white"
+              >
+                Tree Database
+              </h3>
+              <p class="mt-1 text-sm text-white/70">
+                A web application that contains some important tree Information
+                and their location.
+              </p>
+              <div class="mt-3 flex flex-wrap gap-2">
+                <span class="text-xs text-white/60">Python</span>
+                <span class="text-xs text-white/60">HTML</span>
+                <span class="text-xs text-white/60">CSS</span>
+                <span class="text-xs text-white/60">Javascript</span>
+              </div>
+            </div>
+          </a>
+          <a
+            href="https://utm-converter.dharmzeey.com/"
+            class="group rounded-xl overflow-hidden ring-1 ring-white/10 bg-white/5 hover:ring-white/20 transition"
+          >
+            <img
+              src="https://dharmzeey.com/images/utmconverter/utm-converter.jpg"
+              alt="Project preview"
+              class="h-40 w-full object-cover"
+            />
+            <div class="p-5">
+              <div class="flex items-center gap-2 text-xs text-white/60">
+                <i data-lucide="activity" class="h-4 w-4"></i> Geospatial Tool
+              </div>
+              <h3
+                class="mt-2 text-base font-medium tracking-tight group-hover:text-white"
+              >
+                UTM Converter
+              </h3>
+              <p class="mt-1 text-sm text-white/70">
+                A web-based tool for converting between UTM coordinates and
+                latitude/longitude. Useful for GIS, mapping, and field data
+                collection.
+              </p>
+              <div class="mt-3 flex flex-wrap gap-2">
+                <span class="text-xs text-white/60">Python</span>
+                <span class="text-xs text-white/60">JavaScript</span>
+                <span class="text-xs text-white/60">HTML</span>
+                <span class="text-xs text-white/60">CSS</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Teaching & Service -->
+    <section class="py-12 border-t border-white/10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between gap-4">
+          <h2 class="text-2xl md:text-3xl font-semibold tracking-tight">
+            Teaching and Industrial Experience
+          </h2>
+          <span class="text-xs text-white/50">Giving back</span>
+        </div>
+        <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="rounded-xl bg-white/5 ring-1 ring-white/10 p-6">
+            <div class="text-sm font-medium">Secondary School Teacher</div>
+            <div class="text-xs text-white/60">
+              Federal Government Girls College Sagamu · 2025
+            </div>
+            <p class="mt-2 text-sm text-white/70">
+              Taught Agricultural science to over 200 students.
+            </p>
+            <p class="mt-2 text-sm text-white/70">
+              Conduct assessments and graded students on the subject taught and
+              practical sessions.
+            </p>
+            <p class="mt-2 text-sm text-white/70">
+              Gave guidance and also serve as a mentor to them
+            </p>
+          </div>
+          <div class="rounded-xl bg-white/5 ring-1 ring-white/10 p-6">
+            <div class="text-sm font-medium">
+              Intern <i>Industrial Training</i>
+            </div>
+            <div class="text-xs text-white/60">
+              Forestry Research Institute of Nigeria (FRIN) · Nov 2022 - Dec
+              2022
+            </div>
+            <p class="mt-2 text-sm text-white/70">
+              Active participation in daily nursery operations and carrying out
+              research studies on different trees and their importance.
+            </p>
+          </div>
+          <div class="rounded-xl bg-white/5 ring-1 ring-white/10 p-6">
+            <div class="text-sm font-medium">
+              Intern <i>Industrial Training</i>
+            </div>
+            <div class="text-xs text-white/60">
+              Afe Babalola University, Ado-Ekiti Farm, Ekiti State · June 2022 -
+              oct 2022
+            </div>
+            <p class="mt-2 text-sm text-white/70">
+              Assisted in the daily operation of farm machinery and equipment.
+            </p>
+            <p class="mt-2 text-sm text-white/70">
+              Establishment of Teak Plantation, Mango plantation and cashew
+              plantation
+            </p>
+            <p class="mt-2 text-sm text-white/70">
+              Oversaw and maintained the greenhouse facility
+            </p>
+          </div>
+          <div class="rounded-xl bg-white/5 ring-1 ring-white/10 p-6">
+            <div class="text-sm font-medium">
+              Intern <i>Practical year training program</i>
+            </div>
+            <div class="text-xs text-white/60">
+              Faculty of Renewable Natural Resources, Department of Forest
+              Production and Products · Jan 2022 - June 2022
+            </div>
+            <p class="mt-2 text-sm text-white/70">
+              Full participation in the nursery establishment and maintenance of
+              different tree species.
+            </p>
+            <p class="mt-2 text-sm text-white/70">
+              Restoration and rehabilitation of Oba Dam, University of Ibadan.
+            </p>
+            <p class="mt-2 text-sm text-white/70">
+              Conducted mapping and spatial analysis of the Oba Dam restoration area at the University of Ibadan to support effective rehabilitation efforts.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-12 border-t border-white/10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-2xl md:text-3xl font-semibold tracking-tight">
+          Contact
+        </h2>
+        <div class="mt-6 grid grid-cols-1 lg:grid-cols-3 gap-6">
+          <div
+            class="lg:col-span-2 rounded-xl bg-white/5 ring-1 ring-white/10 p-6"
+          >
+            <p class="text-sm text-white/70">
+              I’m open to research collaborations, graduate opportunities, and
+              speaking invitations.
+            </p>
+            <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div
+                class="rounded-lg bg-neutral-900 ring-1 ring-white/10 p-4 flex items-center justify-between"
+              >
+                <div class="flex items-center gap-3">
+                  <i data-lucide="mail" class="h-5 w-5 text-indigo-300"></i>
+                  <div>
+                    <div class="text-xs text-white/60">Email</div>
+                    <div class="text-sm font-medium">
+                      olanrewajuadam2020@gmail.com
+                    </div>
+                  </div>
+                </div>
+                <button
+                  id="copyEmail"
+                  class="inline-flex items-center gap-2 rounded-md px-3 py-1.5 text-xs font-medium text-white bg-white/5 hover:bg-white/10 ring-1 ring-white/10 transition"
+                >
+                  <i data-lucide="copy" class="h-4 w-4"></i> Copy
+                </button>
+              </div>
+              <div
+                class="rounded-lg bg-neutral-900 ring-1 ring-white/10 p-4 flex items-center justify-between"
+              >
+                <div class="flex items-center gap-3">
+                  <i data-lucide="map-pin" class="h-5 w-5 text-indigo-300"></i>
+                  <div>
+                    <div class="text-xs text-white/60">Location</div>
+                    <div class="text-sm font-medium">Ibadan, Nigeria</div>
+                  </div>
+                </div>
+                <a
+                  href="https://maps.google.com"
+                  target="_blank"
+                  class="inline-flex items-center gap-2 rounded-md px-3 py-1.5 text-xs font-medium text-white bg-white/5 hover:bg-white/10 ring-1 ring-white/10 transition"
+                >
+                  <i data-lucide="navigation" class="h-4 w-4"></i> Map
+                </a>
+              </div>
+            </div>
+            <div class="mt-4 flex items-center gap-3">
+              <a
+                href="#"
+                class="inline-flex items-center gap-2 rounded-md px-3.5 py-2 text-sm font-medium text-neutral-900 bg-white hover:bg-white/90 transition"
+              >
+                <i data-lucide="file-text" class="h-4 w-4"></i> Download CV
+              </a>
+              <a
+                href="mailto:olanrewajadam2020@gmail.com?subject=Collaboration%20Opportunity"
+                class="inline-flex items-center gap-2 rounded-md px-3.5 py-2 text-sm font-medium text-white bg-white/5 hover:bg-white/10 ring-1 ring-white/10 transition"
+              >
+                <i data-lucide="send" class="h-4 w-4"></i> Email Me
+              </a>
+            </div>
+          </div>
+        
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-10 border-t border-white/10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div
+          class="flex flex-col sm:flex-row items-center justify-between gap-4"
+        >
+          <div class="flex items-center gap-2 text-white/60 text-sm">
+            <div
+              class="h-7 w-7 rounded-md bg-white/5 ring-1 ring-white/10 grid place-items-center text-xs font-semibold tracking-tight"
+            >
+              <img src="./bg-bw-rm.png" alt="Adam Olanrewaju Icon" srcset="">
+            </div>
+            <span>&copy; <span id="year"></span> Adam Adedamola Olanrewaju</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Initialize icons with stroke width 1.5
+      lucide.createIcons({ attrs: { "stroke-width": 1.5 } });
+
+      // Mobile menu toggle
+      const menuBtn = document.getElementById("menuBtn");
+      const mobileMenu = document.getElementById("mobileMenu");
+      if (menuBtn && mobileMenu) {
+        menuBtn.addEventListener("click", () => {
+          mobileMenu.classList.toggle("hidden");
+        });
+      }
+
+      // Copy email
+      const copyBtn = document.getElementById("copyEmail");
+      if (copyBtn) {
+        copyBtn.addEventListener("click", async () => {
+          try {
+            await navigator.clipboard.writeText("olanrewajuadam2020@gmail.com");
+            copyBtn.innerHTML =
+              '<i data-lucide="check" class="h-4 w-4"></i> Copied';
+            lucide.createIcons({ attrs: { "stroke-width": 1.5 } });
+            setTimeout(() => {
+              copyBtn.innerHTML =
+                '<i data-lucide="copy" class="h-4 w-4"></i> Copy';
+              lucide.createIcons({ attrs: { "stroke-width": 1.5 } });
+            }, 1600);
+          } catch (e) {}
+        });
+      }
+
+      // Footer year
+      const y = document.getElementById("year");
+      if (y) y.textContent = new Date().getFullYear();
+
+ 
+    </script>
+  </body>
+</html>
